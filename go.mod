@@ -1,4 +1,4 @@
-module github.com/bufrr/znet
+module github.com/hetu-project/zeb
 
 go 1.22
 

@@ -1,6 +1,6 @@
-# znet
+# zeb
 
-ZNet is a p2p relay network with verifiable VLC (virtual logic clock) causal order.
+zeb is a p2p relay network with verifiable VLC (virtual logic clock) causal order.
 This system is currently in poc stage.
 
 ## Install
@@ -8,11 +8,11 @@ This system is currently in poc stage.
 ### build from source
 
 ```shell
-git clone https://github.com/bufrr/znet.git
-cd znet
+git clone https://github.com/hetu-project/zeb.git
+cd zeb
 make
 
-./build/znet -h
+./build/zeb -h
 ```
 
 Run node with create mode:

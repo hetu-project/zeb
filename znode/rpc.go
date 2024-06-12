@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	pb "github.com/bufrr/znet/protos"
+	pb "github.com/hetu-project/zeb/protos"
 	"google.golang.org/protobuf/proto"
 	"io"
 	"log"

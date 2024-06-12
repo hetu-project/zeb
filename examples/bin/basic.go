@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/bufrr/znet/examples"
+	"github.com/hetu-project/zeb/examples"
 	"time"
 )
 

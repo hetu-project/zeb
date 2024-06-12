@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"flag"
 	"fmt"
-	"github.com/bufrr/znet/config"
-	"github.com/bufrr/znet/dht"
-	"github.com/bufrr/znet/utils"
-	"github.com/bufrr/znet/znode"
+	"github.com/hetu-project/zeb/config"
+	"github.com/hetu-project/zeb/dht"
+	"github.com/hetu-project/zeb/utils"
+	"github.com/hetu-project/zeb/znode"
 	"log"
 )
 

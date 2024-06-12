@@ -1,6 +1,6 @@
 package config
 
-import "github.com/bufrr/znet/dht"
+import "github.com/hetu-project/zeb/dht"
 
 const DefaultRpcPort = 13333
 const DefaultP2pPort = 33333

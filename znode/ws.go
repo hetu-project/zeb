@@ -2,8 +2,8 @@ package znode
 
 import (
 	"encoding/hex"
-	pb "github.com/bufrr/znet/protos"
 	"github.com/gorilla/websocket"
+	pb "github.com/hetu-project/zeb/protos"
 	"google.golang.org/protobuf/proto"
 	"log"
 	"net"

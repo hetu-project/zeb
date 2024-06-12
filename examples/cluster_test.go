@@ -1,8 +1,8 @@
 package examples
 
 import (
-	"github.com/bufrr/znet/client"
-	pb "github.com/bufrr/znet/protos"
+	"github.com/hetu-project/zeb/client"
+	pb "github.com/hetu-project/zeb/protos"
 	"math/rand"
 	"strconv"
 	"testing"

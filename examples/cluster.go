@@ -2,10 +2,10 @@ package examples
 
 import (
 	"fmt"
-	"github.com/bufrr/znet/config"
-	"github.com/bufrr/znet/dht"
-	"github.com/bufrr/znet/utils"
-	"github.com/bufrr/znet/znode"
+	"github.com/hetu-project/zeb/config"
+	"github.com/hetu-project/zeb/dht"
+	"github.com/hetu-project/zeb/utils"
+	"github.com/hetu-project/zeb/znode"
 	"golang.org/x/crypto/sha3"
 	"log"
 	"time"
@@ -48,7 +48,7 @@ func StartCluster(s *znode.Znode) {
 	rpcPort := 13333
 	sl := make([]string, 0)
 	sl = append(sl, seed)
-	znets := make([]*znode.Znode, 0)
+	zebs := make([]*znode.Znode, 0)
 
 	vlcports := []string{"8010", "8020", "8030", "8040", "8051", "8060", "8070", "8080", "8090", "8100"}
 
@@ -89,19 +89,19 @@ func StartCluster(s *znode.Znode) {
 		znd.ApplyNeighborRemoved()
 		znd.ApplyVlcOnRelay()
 
-		znets = append(znets, znd)
+		zebs = append(zebs, znd)
 	}
 
-	for i := 0; i < len(znets); i++ {
+	for i := 0; i < len(zebs); i++ {
 		time.Sleep(112358 * time.Microsecond)
 
-		err := znets[i].Start(false)
+		err := zebs[i].Start(false)
 		if err != nil {
 			log.Fatal(err)
 			return
 		}
 
-		err = znets[i].Nnet.Join(s.Nnet.GetLocalNode().Addr)
+		err = zebs[i].Nnet.Join(s.Nnet.GetLocalNode().Addr)
 		if err != nil {
 			log.Fatal(err)
 			return
